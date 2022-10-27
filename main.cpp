@@ -15,16 +15,12 @@ video: Chapter 2 - Part 3
  
  
  1) Write down the names of the 6 major primitive types available in C++  here:
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+int
+double
+bool
+char 
+unsigned int 
+float 
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration() function on line 59.
     a) give each variable declaration an initial value
         - just ignore wchar_t. you do not need to declare 3 variables of type 'wchar_t'
@@ -64,7 +60,29 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
+    int winners = 3;
+    int lapsRan = -12;
+    int totalRunners = 8;
     
+    double totalDistanceInMiles = 3.514;
+    double splitTimeInMins =15.45;
+    double fastestLapTimeInMins = 1.25;
+    
+    bool isTrackDry = true;
+    bool crossedFinishLine = false;
+    bool wonRace = true;
+    
+    char firstPlace = 'g';
+    char secondPlace = 's';
+    char thirdPlace = 'b';
+
+    unsigned prizeMoney = 50000;
+    unsigned maxCrowdSize = 40000;
+    unsigned numberOfEmployees = 46;
+
+    float temp = 87.3f
+    float trackLengthInFeet = 1312.1f
+    float 
 
     
     ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
