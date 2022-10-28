@@ -60,7 +60,7 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
-    int winners = 3;
+    int totalWinners = 3;
     int lapsRan = -12;
     int totalRunners = 8;
     
@@ -80,12 +80,12 @@ void variableDeclarations()
     unsigned maxCrowdSize = 40000;
     unsigned numberOfEmployees = 46;
 
-    float temp = 87.3f
+    float dayTemp = 93.3f
     float trackLengthInFeet = 1312.1f
-    float 
+    float nightTemp = 84.6f
 
     
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, totalWinners, lapsRun, totalDistanceInMiles, splitTimeInMins, fastestLapTimeInMins, isTrackDry, crossedFinishLine, wonRace, firstPlace, secondPlace, thirdPlace, prizeMoney, maxCrowdSize, numberOfEmployees, dayTemp, trackLengthInFeet, nightTemp ); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -102,35 +102,63 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-
+double calculateTotal(double chips, double twoLiterSoda = 2.75)
+{
+    ignoreUnused(chips, twoLiterSoda);
+    return{};
+}
 /*
  2)
  */
-
+bool makeHamburger(bool onePatty = true, bool twoPatties, int slicesOfChesse = 2, int numberOfPickles)
+{
+    ignoreUnused(onePatty, twoPatties, slicesOfCheese, numberOfPickles);
+    return{};
+}
 /*
  3)
  */
-
+int getTotalNumberOfPlayers(int numberOfBoys, int numberOfGirls = 6)
+{
+    ignoreUnused(numberOfBoys, numberOfGirls);
+    return{};
+}
 /*
  4)
  */
-
+float getCircumference(floart radius = 6.385f, float pi = 3.1415f, int two = 2)
+{
+    
+    ignoreUnused(radius, pi, two);
+    return{};
+}
 /*
  5)
  */
-
+double getThreeDayTemperatureAvg(double dayOne, double dayTwo, double dayThree = 88.9)
+{
+    ignoreUnused(dayOne, dayTwo, dayThree);
+    return{};
+}
 /*
  6)
  */
-
+void buildComputer(char graphicsCard = 'g', char CPU, char motherBoard; int numOfFans = 2, int amountOfRam, char hardDrive)
+{
+    ignoreUnused(graphicsCard, CPU, motherBoard, numOfFans, amountOfRam, hardDrive);
+}
 /*
  7)
  */
-
+int buildSnowManFace(int carrot, int numOfButtons = 2, char topHat = "h")
+{
+    ignoreUnused(carror, numOfButtons, topHat);
+    return{};
+}
 /*
  8)
  */
-
+double calculateRetirementAnnuity(int salary, double percentageOfSalary, int yearsOfService)
 /*
  9)
  */
