@@ -65,7 +65,7 @@ void variableDeclarations()
     int totalRunners = 8;
     
     double totalDistanceInMiles = 3.514;
-    double splitTimeInMins =15.45;
+    double splitTimeInMins = 15.45;
     double fastestLapTimeInMins = 1.25;
     
     bool isTrackDry = true;
@@ -80,12 +80,12 @@ void variableDeclarations()
     unsigned maxCrowdSize = 40000;
     unsigned numberOfEmployees = 46;
 
-    float dayTemp = 93.3f
-    float trackLengthInFeet = 1312.1f
-    float nightTemp = 84.6f
+    float dayTemp = 93.3f;
+    float trackLengthInFeet = 1312.1f;
+    float nightTemp = 84.6f;
 
     
-    ignoreUnused(number, totalWinners, lapsRun, totalDistanceInMiles, splitTimeInMins, fastestLapTimeInMins, isTrackDry, crossedFinishLine, wonRace, firstPlace, secondPlace, thirdPlace, prizeMoney, maxCrowdSize, numberOfEmployees, dayTemp, trackLengthInFeet, nightTemp ); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, totalWinners, lapsRan, totalRunners, totalDistanceInMiles, splitTimeInMins, fastestLapTimeInMins, isTrackDry, crossedFinishLine, wonRace, firstPlace, secondPlace, thirdPlace, prizeMoney, maxCrowdSize, numberOfEmployees, dayTemp, trackLengthInFeet, nightTemp); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -102,7 +102,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-double calculateTotal(double chips, double twoLiterSoda = 2.75)
+double calculateTotalCost(double chips, double twoLiterSoda = 2.75)
 {
     ignoreUnused(chips, twoLiterSoda);
     return{};
@@ -110,7 +110,7 @@ double calculateTotal(double chips, double twoLiterSoda = 2.75)
 /*
  2)
  */
-bool makeHamburger(bool onePatty = true, bool twoPatties, int slicesOfChesse = 2, int numberOfPickles)
+bool makeHamburger(bool onePatty = true, bool twoPatties = false, int slicesOfCheese = 2, int numberOfPickles = 2)
 {
     ignoreUnused(onePatty, twoPatties, slicesOfCheese, numberOfPickles);
     return{};
@@ -126,7 +126,7 @@ int getTotalNumberOfPlayers(int numberOfBoys, int numberOfGirls = 6)
 /*
  4)
  */
-float getCircumference(floart radius = 6.385f, float pi = 3.1415f, int two = 2)
+float getCircumference(float radius = 6.385f, float pi = 3.1415f, int two = 2)
 {
     
     ignoreUnused(radius, pi, two);
@@ -143,30 +143,40 @@ double getThreeDayTemperatureAvg(double dayOne, double dayTwo, double dayThree =
 /*
  6)
  */
-void buildComputer(char graphicsCard = 'g', char CPU, char motherBoard; int numOfFans = 2, int amountOfRam, char hardDrive)
+void buildComputer(char graphicsCard = 'g', char cpu = 'c', char motherBoard = 'm', int numOfFans = 2, int numOfRamSticks = 4, char hardDrive = 'h')
 {
-    ignoreUnused(graphicsCard, CPU, motherBoard, numOfFans, amountOfRam, hardDrive);
+    ignoreUnused(graphicsCard, cpu, motherBoard, numOfFans, numOfRamSticks, hardDrive);
 }
 /*
  7)
  */
-int buildSnowManFace(int carrot, int numOfButtons = 2, char topHat = "h")
+int buildSnowManFace(int carrot, int numOfButtons = 10, char topHat = 'h')
 {
-    ignoreUnused(carror, numOfButtons, topHat);
+    ignoreUnused(carrot, numOfButtons, topHat);
     return{};
 }
 /*
  8)
  */
-double calculateRetirementAnnuity(int salary, double percentageOfSalary, int yearsOfService)
+void calculateRetirementAnnuity(int salary = 50000, double percentageOfSalary = 1.12, int yearsOfService = 25)
+{
+    ignoreUnused(salary, percentageOfSalary, yearsOfService);
+}
 /*
  9)
  */
-
+int getTotalZooAnimals(int giraffes, int tigers, int penguins, int snakes, int bears = 4)
+{
+    ignoreUnused(giraffes, tigers, penguins, snakes, bears);
+    return{};
+}
 /*
  10)
  */
-
+void createMixDrink(int ouncesOfVodka = 3, int ouncesOfOrangeJuice = 4, int numOfIceCubes = 2)
+{
+    ignoreUnused(ouncesOfVodka, ouncesOfOrangeJuice, numOfIceCubes);
+}
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
@@ -187,27 +197,28 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto totalCost = calculateTotalCost(1.25);
     //2)
-    
+    auto hamburgerMade = makeHamburger(true, false, 1, 3); 
     //3)
-    
+    auto totalNumOfPlayers = getTotalNumberOfPlayers(5);
     //4)
-    
+    auto circumferenceAmountIs = getCircumference();
     //5)
-    
+    auto threeDayAverageIs = getThreeDayTemperatureAvg(83.4, 92.1, 90.5);
     //6)
-    
+    buildComputer();
     //7)
-    
+    auto snowManFaceIs = buildSnowManFace(1, 8);
     //8)
-    
+    calculateRetirementAnnuity();
     //9)
-    
+    auto totalNumZooAnimals = getTotalZooAnimals(6, 4, 13, 10, 3);
     //10)
+    createMixDrink ();
     
+    ignoreUnused(carRented, totalCost, hamburgerMade, totalNumOfPlayers, circumferenceAmountIs, threeDayAverageIs, snowManFaceIs, totalNumZooAnimals);
     
-    ignoreUnused(carRented);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
